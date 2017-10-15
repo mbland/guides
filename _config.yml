@@ -4,6 +4,7 @@ exclude:
 - Gemfile.lock
 - README.md
 - LICENSE.md
+- vendor
 
 theme: jekyll-theme-guides-mbland
 permalink: pretty
