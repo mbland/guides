@@ -1,77 +1,45 @@
-baseurl: /guides
-markdown: redcarpet
-name: 18F Guides
+name: Guides
 exclude:
 - Gemfile
 - Gemfile.lock
 - README.md
 - LICENSE.md
 
+theme: jekyll-theme-guides-mbland
+permalink: pretty
+incremental: true
+
+sass:
+  style: :compressed
+
+# Author/Organization info to be displayed in the templates
+author:
+  name: Mike Bland
+  url: https://mike-bland.com/
+
 navigation:
-- text: Accessibility
-  url: /accessibility
-- text: Analytics
-  url: https://github.com/18F/analytics-standards
-- text: Agile
-  url: /agile
-- text: APIs
-  url: https://github.com/18f/api-standards
-- text: Testing Cookbook
-  url: /testing-cookbook
-- text: Automated Testing Playbook
-  url: /automated-testing-playbook
-- text: Before You Ship
-  url: /before-you-ship
-- text: Blogging
-  url: /blogging-guide
-- text: Content Guide
-  url: /content-guide
-- text: Design Methods
-  url: https://methods.18f.gov/
-- text: Development Environment Guide
-  url: https://pages.18f.gov/dev-environment/
-- text: Federalist Documentation
-  url: https://federalist-docs.18f.gov
-- text: Frontend
-  url: /frontend
-- text: Grouplet Playbook
-  url: /grouplet-playbook
 - text: Guides Template
   url: /guides-template
-- text: Inter-Agency Agreements with 18F
-  url: /iaa-forms
-- text: Joining 18F!
-  url: /joining-18f
-- text: Lean Product Design
-  url: /lean-product-design
-- text: Open Source Guide
-  url: /open-source-guide
-- text: Partnership Playbook
-  url: /partnership-playbook
-- text: Product
-  url: /product-guide
-- text: Writing Lab
-  url: /writing-lab-guide
 
-
-google_analytics_ua: UA-48605964-19
+# google_analytics_ua:
 
 repos:
-- name: 18F Guides
-  description: 18F Guides GitHub repository
-  url: https://github.com/18F/guides
-
-# To use the shared 18F Guides styles when deploying to pages.18f.gov,
-# uncomment the following; comment it out during local development:
-asset_root: /guides-template
+- name: Guides
+  description: Main repository
+  url: https://github.com/mbland/guides
+- name: jekyll-theme-guides-mbland
+  description: Theme repository
+  url: https://github.com/mbland/jekyll-theme-guides-mbland
 
 back_link:
-  url: "https://pages.18f.gov/"
-  text: Read more 18F Pages
+  url: "https://mike-bland.com/"
+  text: "Back to Mike Bland's site"
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
-      layout: "guides_style_18f_default"
+      layout: "default"
+
+jekyll_pages_api_search:
+  skip_index: true
